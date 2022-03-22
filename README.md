@@ -26,6 +26,9 @@ The Apple store will reject your app if it includes simulator binaries. Therefor
       rm "$FRAMEWORK_EXECUTABLE_PATH"
       mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
 
+# Compatibility
+We support latest Xcode 13+ and swift 5.0 Version.
+
 # Configuration
 
         import DevnagriSDK
