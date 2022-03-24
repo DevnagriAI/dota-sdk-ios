@@ -9,22 +9,22 @@ import Swift
 import SystemConfiguration
 import UIKit
 import _Concurrency
-@_hasMissingDesignatedInitializers public class CoredataManager {
+@_hasMissingDesignatedInitializers final public class CoredataManager {
   public static let shared: DevnagriSdk.CoredataManager
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class DevnagriSdk {
+@_hasMissingDesignatedInitializers final public class DevnagriSdk {
   public static func shared() -> DevnagriSdk.DevnagriSdk
-  public func initSdk(apiKey: Swift.String)
+  final public func initSdk(apiKey: Swift.String)
   @objc deinit
 }
 extension DevnagriSdk.DevnagriSdk {
-  public func getTranslationOfString(sentence: Swift.String, callback: @escaping ((Swift.String) -> Swift.Void))
-  public func getTranslationOfStrings(sentences: [Swift.String], callback: @escaping (([Swift.String]) -> Swift.Void))
-  public func getTranslationsOfDictionary(dictionary: [Swift.String : Swift.String], callback: @escaping (([Swift.String : Swift.String]) -> Swift.Void))
-  public func getAllSupportableLanguages(callBack: @escaping (([DevnagriSdk.DevnagriSupportingLanguageItem]) -> Swift.Void))
-  public func updateAppLocale(code: Swift.String)
-  public func getCurrentApplicationLanguageCode() -> Swift.String
+  final public func getTranslationOfString(sentence: Swift.String, callback: @escaping ((Swift.String) -> Swift.Void))
+  final public func getTranslationOfStrings(sentences: [Swift.String], callback: @escaping (([Swift.String]) -> Swift.Void))
+  final public func getTranslationsOfDictionary(dictionary: [Swift.String : Swift.String], callback: @escaping (([Swift.String : Swift.String]) -> Swift.Void))
+  final public func getAllSupportableLanguages(callBack: @escaping (([DevnagriSdk.DevnagriSupportingLanguageItem]) -> Swift.Void))
+  final public func updateAppLocale(code: Swift.String)
+  final public func getCurrentApplicationLanguageCode() -> Swift.String
 }
 public func NSLocalizedString(_ key: Swift.String, comment: Swift.String) -> Swift.String
 public func NSLocalizedString(_ key: Swift.String, tableName: Swift.String? = nil, bundle: Foundation.Bundle = Bundle.main, value: Swift.String = "", comment: Swift.String) -> Swift.String
@@ -34,9 +34,6 @@ public enum ReachabilityError_devNagri : Swift.Error {
   case UnableToSetCallback
   case UnableToSetDispatchQueue
   case UnableToGetInitialFlags
-}
-extension Foundation.NSNotification.Name {
-  public static let reachabilityChanged: Foundation.Notification.Name
 }
 public class DevnagriNetworkReachability {
   public typealias NetworkReachable = (DevnagriSdk.DevnagriNetworkReachability) -> ()
