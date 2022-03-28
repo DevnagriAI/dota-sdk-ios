@@ -39,11 +39,16 @@ Initialize the SDK by calling the following code in your didFinishLaunchingWithO
       DevnagriSdk.shared().initSdk(apiKey:String)
      }
      
+# Default Localisation Override
+   The SDK override the functionality of NSLocalisedString by default. You just need to import the DevnagriSDK to the file where you want NSLocalisedString to be override by the SDK.
+   
 # Change Language
 In case you don't want to use the system language, you can set a different language in the updateAppLocale method. The language code (locale) needs to be present in a release from Devnagri.
 
-      DavnagriSdk.shared().updateAppLocale(code: "en")
+      DavnagriSdk.shared().updateAppLocale(code: "hi")
       
+  Please note that you will see the english text back if your device language is english and you have not set any specific language for the SDK. To get the translation in Hindi, Please update app locale to Hindi as per above method.
+  
 # Get Current language code
 In case you want to know which language code currently used by application.
 
@@ -85,4 +90,4 @@ Select project target and click general select in framework,libraries,and Embedd
 than choose Embed -> Embed & Sign.
 
       
-     
+  
