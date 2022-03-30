@@ -27,7 +27,7 @@ The Apple store will reject your app if it includes simulator binaries. Therefor
       mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
 
 # Compatibility
-We support latest Xcode 13+ and swift 5.0 Version.
+We support latest Xcode 13+ and swift 5.0 Version. This SDK requires base language as english. Other base language will not supported by this SDK
 
 # Configuration
 
