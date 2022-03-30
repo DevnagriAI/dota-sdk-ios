@@ -31,7 +31,7 @@ We support latest Xcode 13+ and swift 5.0 Version. This SDK requires base langua
 
 # Configuration
 
-        import DevnagriSDK
+        import DevnagriSdk
 
 Initialize the SDK by calling the following code in your didFinishLaunchingWithOptions Method and you can get API_KEY from devnagri
 
@@ -40,7 +40,7 @@ Initialize the SDK by calling the following code in your didFinishLaunchingWithO
      }
      
 # Default Localisation Override
-   The SDK override the functionality of NSLocalisedString by default. You just need to import the DevnagriSDK to the file where you want NSLocalisedString to be override by the SDK.
+   The SDK override the functionality of NSLocalisedString by default. You just need to import the DevnagriSdk to the file where you want NSLocalisedString to be override by the SDK.
    
 # Change Language
 In case you don't want to use the system language, you can set a different language in the updateAppLocale method. The language code (locale) needs to be present in a release from Devnagri.
