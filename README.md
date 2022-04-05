@@ -45,7 +45,7 @@ Initialize the SDK by calling the following code in your didFinishLaunchingWithO
 # Change Language
 In case you don't want to use the system language, you can set a different language in the updateAppLocale method. The language code (locale) needs to be present in a release from Devnagri.
 
-      DavnagriSdk.shared().updateAppLocale(code: "hi")
+      DevnagriSdk.shared().updateAppLocale(code: "hi")
       
   Please note that you will see the english text back if your device language is english and you have not set any specific language for the SDK. To get the translation in Hindi, Please update app locale to Hindi as per above method.
   
@@ -66,14 +66,14 @@ You can use these methods anywhere in your project and these will provide transl
 
 Get Translation of a Specific String
 
-      DevnagriSdk.shared().getTranslationOfString(sentance : ”Hello ”){ translatedString in
+      DevnagriSdk.shared().getTranslationOfString(sentence : ”Hello ”){ translatedString in
        //Do here...
       }
 
 Get Translations of an Array of Strings.
 
       let arrayOfStrings:[String] = ["SampleText1","SampleText2","SampleText3"];
-      DevnagriSdk.shared().getTranslationsOfStrings(sentances : arrayOfStrings){translatedStrings
+      DevnagriSdk.shared().getTranslationsOfStrings(sentences : arrayOfStrings){translatedStrings
       //Do here...
       }
 
