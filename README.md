@@ -67,7 +67,7 @@ You can get supported languages for the SDK using this method. This will return 
 # Translate String, List and Dictionary on runtime
 You can use these methods anywhere in your project and these will provide translation for current active locale in callback method.
 
-Get Translation of a Specific String
+    Get Translation of a Specific String
 
       DevnagriSDK.shared.getTranslationOfString(sentence : "Hello"){ translatedString in
         //Do your stuff at here....
@@ -92,5 +92,3 @@ Get Translations Of Dictionary
 Select project target and click general select in framework,libraries,and Embedded Content and select *DevnagriSdk.xcframwork* if not selected 
 than choose **Embed -> Embed & Sign.**
 
-      
-  

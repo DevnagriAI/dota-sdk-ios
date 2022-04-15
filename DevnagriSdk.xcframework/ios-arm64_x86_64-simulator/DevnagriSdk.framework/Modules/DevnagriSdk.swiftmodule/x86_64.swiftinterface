@@ -13,13 +13,14 @@ public func NSLocalizedString(_ key: Swift.String, comment: Swift.String) -> Swi
 extension ObjectiveC.NSObject {
   public func NSLocalizedString(_ key: Swift.String, tableName: Swift.String? = nil, bundle: Foundation.Bundle = Bundle.main, value: Swift.String = "", comment: Swift.String) -> Swift.String
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class DevnagriSDK : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers final public class DevnagriSDK : ObjectiveC.NSObject {
   public static var shared: DevnagriSdk.DevnagriSDK {
     get
   }
   final public func initSdk(apiKey: Swift.String)
   @objc deinit
   final public func reloadSdk()
+  @objc override dynamic public init()
 }
 extension DevnagriSdk.DevnagriSDK {
   final public func getTranslationOfString(sentence: Swift.String, callback: @escaping ((Swift.String) -> Swift.Void))
