@@ -38,8 +38,11 @@ We support latest Xcode 13+ and swift 5 (5.5) Version. This SDK requires base la
 
 Initialize the SDK by calling the following code in your didFinishLaunchingWithOptions Method and you can get API_KEY from devnagri
 
+*updateStringTime* is an optional parameter 
+For auto update strings translations you can set time in minutes.
+
      func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-         DevnagriSDK.shared.initSdk(apiKey:String)
+         DevnagriSDK.shared.initSdk(apiKey:String, updateStringsTime:Int)
      }
      
 # Default Localisation Override
@@ -57,6 +60,16 @@ In case you want to know which language code currently used by application.
 
      let currentLanguageCode = DevnagriSDK.shared.getCurrentApplicationLanguageCode()
 
+# Update Translations
+In case you want to update all english localisation strings translations to supported language.  
+
+    DevnagriSDK.shared.updateTranslations()
+
+# Refresh Subscription Details
+if you want to refresh sdk subscription details. 
+
+    DevnagriSDK.shared.refreshSubscriptionDetail()
+    
 # Get Supported Languages
 You can get supported languages for the SDK using this method. This will return hashmap of language name and language code
 
