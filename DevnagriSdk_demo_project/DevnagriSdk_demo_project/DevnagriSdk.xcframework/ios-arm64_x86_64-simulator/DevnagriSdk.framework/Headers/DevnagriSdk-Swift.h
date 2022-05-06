@@ -238,6 +238,7 @@ SWIFT_CLASS("_TtC11DevnagriSdk11DevnagriSDK")
 
 
 
+
 SWIFT_CLASS_NAMED("DevnagriSubscriptionInfo")
 @interface DevnagriSubscriptionInfo : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -525,6 +526,7 @@ SWIFT_CLASS("_TtC11DevnagriSdk11DevnagriSDK")
 @interface DevnagriSDK : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

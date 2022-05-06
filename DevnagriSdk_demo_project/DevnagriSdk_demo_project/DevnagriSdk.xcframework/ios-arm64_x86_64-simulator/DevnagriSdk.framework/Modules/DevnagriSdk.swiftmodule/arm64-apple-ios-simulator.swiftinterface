@@ -17,9 +17,10 @@ extension ObjectiveC.NSObject {
   public static var shared: DevnagriSdk.DevnagriSDK {
     get
   }
-  final public func initSdk(apiKey: Swift.String)
+  final public func initSdk(apiKey: Swift.String, updateStringsTime inMinutes: Swift.Int? = nil)
   @objc deinit
-  final public func reloadSdk()
+  final public func updateTranslations()
+  final public func refreshSubscriptionDetail()
   @objc override dynamic public init()
 }
 extension DevnagriSdk.DevnagriSDK {
@@ -29,10 +30,6 @@ extension DevnagriSdk.DevnagriSDK {
   final public func getAllSupportableLanguages(callBack: @escaping (([DevnagriSdk.DevnagriSupportingLanguageItem]) -> Swift.Void))
   final public func updateAppLocale(code: Swift.String)
   final public func getCurrentApplicationLanguageCode() -> Swift.String
-}
-@_hasMissingDesignatedInitializers final public class CoredataManager {
-  public static let shared: DevnagriSdk.CoredataManager
-  @objc deinit
 }
 public enum ReachabilityError_devNagri : Swift.Error {
   case FailedToCreateWithAddress(Darwin.sockaddr_in)
