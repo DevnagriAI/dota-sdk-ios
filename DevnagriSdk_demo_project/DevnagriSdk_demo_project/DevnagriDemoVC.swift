@@ -26,33 +26,33 @@ class DevnagriDemoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-        //For single String
-        DevnagriSDK.shared.getTranslationOfString(sentence: "List Of Best Tourist Places to Visit in India") { translatedString in
-            
-            self.lblTitle.text = translatedString
-            
+         
+        //Update translated string according to current selected app lang
+        //DevnagriSDK.shared.updateTranslations()
+        
+        //Refresh subscription details
+        //DevnagriSDK.shared.refreshSubscriptionDetail()
+        
+        DevnagriSDK.shared.getTranslationOfString(sentence: "Hello") { translatedString in
+            print("Translated String-->",translatedString)
         }
         
-        //For Array Strings
-        /*
-         DevnagriSDK.shared.getTranslationOfStrings(sentences: ["String1","String2","String3"]) { arrOfTranslatedStrings in
-         print("Translations - " arrOfTranslatedStrings)
-         }
-         */
-        
-        //For Dictionary
-       /*
-        DevnagriSDK.shared.getTranslationsOfDictionary(dictionary: ["key_1":"value_1","key_2":"value_3"]) { dicOfTransltedDict in
-            print(dicOfTransltedDict)
+        DevnagriSDK.shared.getTranslationOfStrings(sentences: ["Welcome guys"]) { translatedStrings in
+            print("Translated Array -->",translatedStrings)
         }
-        */
-          
+        
+        let dictOfTest = ["red_color":"Red","black_color":"Black"]
+        
+        DevnagriSDK.shared.getTranslationsOfDictionary(dictionary: dictOfTest) { translatedDict in
+            print("Translated Dictionary -->",translatedDict)
+        }
+  
     }
      
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        self.lblTitle.text = NSLocalizedString("new_two", comment: "")
         self.tblList.reloadData()
     }
     
@@ -60,7 +60,7 @@ class DevnagriDemoVC: UIViewController {
     {
         let mainStoryboard = UIStoryboard(name: "Main", bundle:  nil)
         let VC = mainStoryboard.instantiateViewController(withIdentifier: "SupportingLanguageLIstVC") as! SupportingLanguageLIstVC
-         
+        
         self.navigationController?.pushViewController(VC, animated: true)
     }
     

@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xrc/fLiRrBRtzTgPjgvpBHgIwn4=
+		ph2tlm9o89ElamH5hpufooDl0/c=
 		</data>
 		<key>Modules/DevnagriSdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/DevnagriSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		q8+1xQdfA9NnMbpFF3MG4jSRETA=
+		jj0h6cR2wXRkM+yLL9HSDaSytHg=
 		</data>
 		<key>Modules/DevnagriSdk.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/DevnagriSdk.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		q8+1xQdfA9NnMbpFF3MG4jSRETA=
+		jj0h6cR2wXRkM+yLL9HSDaSytHg=
 		</data>
 		<key>Modules/DevnagriSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/DevnagriSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8pdJAqc+ZYUmD7spwn9+/qy5oYc=
+		Y5xMSy1PMRmJ+gNpu/U2dDOa78A=
 		</data>
 		<key>Modules/DevnagriSdk.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/DevnagriSdk.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		8pdJAqc+ZYUmD7spwn9+/qy5oYc=
+		Y5xMSy1PMRmJ+gNpu/U2dDOa78A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vUvfnEdyEYVozjblrwrLyah4rXB4iEi3pCHgItbJHTk=
+			3RlXU4zckPNNyuzWr7oXvaDIKy3h8vvBgMGE6oQNWNY=
 			</data>
 		</dict>
 		<key>Modules/DevnagriSdk.swiftmodule/arm64.swiftdoc</key>
@@ -150,7 +150,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vUvfnEdyEYVozjblrwrLyah4rXB4iEi3pCHgItbJHTk=
+			3RlXU4zckPNNyuzWr7oXvaDIKy3h8vvBgMGE6oQNWNY=
 			</data>
 		</dict>
 		<key>Modules/DevnagriSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -171,7 +171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jsjt5ERrWqg2VqOdBaqWeeecRth7u2kGysRAazuSYj8=
+			hfNxlfeV1hfnSMUd5I2pNnp1SAO7Nk+CxJ6pvR7ESOw=
 			</data>
 		</dict>
 		<key>Modules/DevnagriSdk.swiftmodule/x86_64.swiftdoc</key>
@@ -192,7 +192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jsjt5ERrWqg2VqOdBaqWeeecRth7u2kGysRAazuSYj8=
+			hfNxlfeV1hfnSMUd5I2pNnp1SAO7Nk+CxJ6pvR7ESOw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -17,8 +17,6 @@ class SupportingLanguageLIstVC: UIViewController {
     private var arrOfSupportingLangauge:[DevnagriSupportingLanguageItem] = []
     private var selectedLanguageCode:String = ""
      
-    var actionHandler:(() -> Void)? = nil
-     
     override func viewDidLoad() {
         super.viewDidLoad()
   
@@ -98,6 +96,5 @@ extension SupportingLanguageLIstVC : UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedLanguageCode = self.arrOfSupportingLangauge[indexPath.row].languageCode
         self.tblSupportingLanguageList.reloadData()
-        self.actionHandler?()
     }
  }

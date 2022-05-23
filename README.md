@@ -61,7 +61,7 @@ In case you want to know which language code currently used by application.
      let currentLanguageCode = DevnagriSDK.shared.getCurrentApplicationLanguageCode()
 
 # Update Translations
-In case you want to update all english localisation strings translations to supported language.  
+In case you want to update english localisation strings translations according to selected application locale.  
 
     DevnagriSDK.shared.updateTranslations()
 

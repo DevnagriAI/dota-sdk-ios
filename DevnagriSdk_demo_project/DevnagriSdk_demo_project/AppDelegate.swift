@@ -15,8 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //Please get your api key from devnagri team
-        DevnagriSDK.shared.initSdk(apiKey: "devnagri_qwe123rty456asd098")
-        
+//        devnagri_f6d966f0cd3f11ecb46e02bf838402f8
+//        devnagri_083d95d4b71411eca510021b05a03360
+        DevnagriSDK.shared.initSdk(apiKey: "devnagri_f6d966f0cd3f11ecb46e02bf838402f8")
+         
         return true
     }
 
